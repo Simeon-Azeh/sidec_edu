@@ -16,7 +16,11 @@
         Welcome to <span></span>
     </div>
     <div class="video">
-        <video src="images/landing.mp4" autoplay loop muted></video>
+        <video autoplay muted preload="auto">
+            <source src="images/landing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
     </div>
     <div class="buts">
     <button onclick="window.location.href='login.html'" class="button">
