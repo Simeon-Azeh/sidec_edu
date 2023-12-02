@@ -2,39 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/03ca4ba95f.js" crossorigin="anonymous"></script>
-    <title>Forgot Password</title>
+    <title>login</title>
     <link rel="icon" href="Images/Asset 6.png" type="image/png">
 </head>
 <body>
     <div class="container">
-        <div class="forms form2">
+        <div class="forms">
             <div class="form login">
-              <a href="login.html" id="bion"> <i class="fa-solid fa-arrow-left" id="bicon"></i></a><span class="title" id="rp">Reset your password</span>
-              <p id="pr">We will send you an email to reset your<br> password</p>
+                <span class="title">Change Password</span>
                 <form action="homepage.html">
-                    <div class="input-box">
-                        <label for="email" id="lab">Email</label>
-                        <input type="email" required>
-                       
+                   
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter new password" required>
+                        <i class="fa-solid fa-lock icon"></i> 
+                        <i class="fa-solid fa-eye-slash showHidePw"></i>
                     </div>
-                 
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm password" required>
+                        <i class="fa-solid fa-lock icon"></i> 
+                    </div>
                     <div class="input-field button">
-                        <input type="submit" id="em" onclick="window.location.href='resetpass.html'" value="Email me">
+                        <input type="submit" oneclick="window.location.href='login.html'" value="Confirm">
+                    </div> 
+                        
                     </div>
-                    <div class="input-field button">
-                        <input type="submit" id="log" onclick="window.location.href='login.html'" value="Login">
-                    </div>
+                   
                 </form>
+                </div>
+            </div>
+           
             </div>
         </div>
-    </div>
-    <script src="/javascript/index.js"></script>
+   
+    
+        <script src="index.js"></script>
 </body>
 </html>
