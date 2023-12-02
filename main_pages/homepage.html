@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/03ca4ba95f.js" crossorigin="anonymous"></script>
+    <title>sidec</title> 
+    <link rel="icon" href="/images/Asset 6.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#"   class="logo">
+                    <img src="/images/Asset 6.png" alt="sidec">
+                    <span class="nav-item">Sidec blogspace</span>
+                </a>
+            </li>
+            <li><a href="homepage.html" class="active">
+                <i class="fas fa-home active"></i>
+                <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="user.html">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Dashboard</span>
+            </a></li>
+            <li><a href="test.html">
+                <i class="fas fa-book-open"></i>
+                <span class="nav-item">Test</span>
+            </a></li>
+            <li><a href="tutors.html">
+                <i class="fas fa-chalkboard-user"></i>
+                <span class="nav-item">Tutors</span>
+            </a></li>
+            <li><a href="courses.html">
+                <i class="fas fa-book"></i>
+                <span class="nav-item">Courses</span>
+            </a></li>
+            <li><a href="questions.html">
+                <i class="fas fa-file-circle-question"></i>
+                <span class="nav-item">Question bank</span>
+            </a></li>
+            <li><a href="notifications.html">
+                <i class="fas fa-bell"></i>
+                <span class="nav-item">Notifications</span>
+            </a></li>
+            <li><a href="settings.html">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Settings</span>
+            </a></li>
+            <li><a href="faq.html">
+                <i class="fas fa-question-circle"></i>
+                <span class="nav-item">Help</span>
+            </a></li>
+            <li>
+                <a href="payment.html" class="pro-button" onclick="confirmNavigation()">
+                    Pro
+                </a>
+            </li>
+            
+            <li><a href="Login.html" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+            </a></li>
+        </ul>
+    </nav>
+  
+        <section class="tutor-container" >
+        <h3>Welcome,</h3>
+        <h2>Sidec</h2>
+        <div class="tutor-content" onclick="window.location.href='tutor-page.html'">
+            <h2>Learning slow? <br> Hire a tutor!</h2>
+            <p>50% off online classes</p>
+        </div>
+        <h3 id="lon">Recent results</h3>
+        <div class="recent-results-1" onclick="window.location.href='results-page.html'">
+            <h5>29th Oct 2023 | 9:35</h5>  <h5 id="subs">Subjects</h5>
+            <h1>94%</h1>
+            <p>out of 100</p>
+        </div>
+        <div class="test-2">
+            <p>You have taken only one test, take another and get your result within 30minuits free!</p>
+            <button type="submit" onclick="window.location.href='test.html'" class="button animate">Take test</button>
+
+        </div>
+        <div class="container-7">
+            <h1 class="heading">
+              <span>Todo list</span>
+              <span aria-hidden="true" aria-label="A white piece of paper with text written on it by a yellow pencil">📝</span>
+            </h1>
+            <form id="add-todo-form">
+              <div class="form-group">
+                <input id="new-todo-input" type="text" class="input" placeholder="Anything to do today?">
+                <button class="button form-group__submit">Add</button>
+              </div>
+            </form>
+            <ul id="todos" class="todos"></ul>
+          </div>
+        </section>
+        <section class="section other-section-2">
+            <!-- Content for the second other section -->
+            <div class="notification-panel">
+                <button class="close-button" onclick="closeNotificationPanel()">&times;</button>
+                <h2>Latest Updates</h2>
+                <p>A question bank is now available on our website, check navigation and download or view past questions to all subjects<a href="questions.html" class="learn-more-link">Learn more...</a></p>
+            </div>
+            
+            <script>
+                function closeNotificationPanel() {
+                    const notificationPanel = document.querySelector('.notification-panel');
+                    notificationPanel.style.display = 'none';
+                }
+            </script>
+        </section>
+        <section class="profiledis">
+            <div class="row">
+                <div class="profile-picture">
+                    <img src="/images/cynthia.png" alt="Profile Picture">
+                </div>
+                <div class="content">
+                    <!-- Other content for the row card -->
+                    <h2>Cyntia Morgan</h2>
+                    <p>University | UBuea</p>
+                </div>
+                <hr> 
+                <div class="membership-container">
+                    <h5>Membership</h5>
+                    <p>Basic</p>
+                    <button class="upgrade-button" onclick="window.location.href='payment.html'">Upgrade</button>
+                  </div>
+                  <div class="other-content">
+                    <h5>SKILLS</h5>
+                    <div class="skill">
+                        <i title="Proficient in HTML, with the ability to create and structure web pages effectively" class="fa-brands fa-html5"></i>
+                        <span>Html</span>
+                        <div class="progress-container">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i title=" Possesses a solid understanding of CSS for styling and layout, including basic styling concepts." class="fa-brands fa-css3-alt"></i>
+                        <span>CSS</span>
+                        <div class="progress-container">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i title="Familiar with Python, capable of implementing server-side logic and enhancing web applications. " class="fa-brands fa-python"></i>
+                        <span>Py3</span>
+                        <div class="progress-container">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>                   
+                    
+                </div>
+                <div class="buttons-container">
+                    <button type="submit" onclick="window.location.href='courses.html'" class="button">Find courses</button>
+                    <button type="submit" onclick="window.location.href='index.html'" class="log0"><i class="fa-solid fa-right-from-bracket"></i>Log out</button>
+                </div>
+                <canvas id="performanceChart" width="350" height="200"></canvas>
+         </div>
+            
+        </section>
+ 
+        <script>
+            (() => {
+              const $addTodoForm = document.querySelector('#add-todo-form');
+              const $newTodoInput = document.querySelector('#new-todo-input');
+              const $todos = document.querySelector('#todos');
+        
+              const handleTodoEditClick = event => {
+                event.stopPropagation();
+        
+                const $editButton = event.currentTarget;
+                const $todo = $editButton.parentElement.parentElement;
+                let $todoTitle = $todo.querySelector('.todo__title');
+                let $todoInput = $todo.querySelector('.todo__input');
+        
+                if ($todoTitle) {
+                  $todoInput = document.createElement('input');
+                  $todoInput.classList.add('input', 'todo__input');
+                  $todoInput.value = $todoTitle.textContent;
+        
+                  $todo.removeChild($todoTitle);
+                  $todo.prepend($todoInput);
+                } else {
+                  $todoTitle = document.createElement('span');
+                  $todoTitle.classList.add('todo__title');
+                  const title = $todoInput.value.trim();
+        
+                  if (title) {
+                    $todoTitle.textContent = $todoInput.value;
+                    $todo.removeChild($todoInput);
+                    $todo.prepend($todoTitle);
+                  }
+                }
+              }
+        
+              const handleTodoDeleteClick = event => {
+                event.stopPropagation();
+        
+                const $deleteButton = event.currentTarget;
+                const $todo = $deleteButton.parentElement.parentElement;
+                $todo.classList.add('todo--delete');
+        
+                setTimeout(() => {
+                  $todos.removeChild($todo);
+                }, 300);
+              };
+        
+              const handleTodoTitleClick = event => {
+                const $todo = event.currentTarget;
+                $todo.classList.toggle('todo__title--done');
+              };
+        
+              function createTodo(value) {
+                const $todoTitle = document.createElement('span');
+                $todoTitle.classList.add('todo__title');
+                $todoTitle.textContent = value;
+                $todoTitle.addEventListener('click', handleTodoTitleClick);
+        
+                const $item = document.createElement('li');
+                $item.classList.add('todo');
+        
+                const $editButton = document.createElement('button');
+                $editButton.classList.add('button', 'todo__button', 'todo__button--edit');
+                $editButton.textContent = 'Edit';
+                $editButton.addEventListener('click', handleTodoEditClick);
+        
+                const $deleteButton = document.createElement('button');
+                $deleteButton.classList.add('button', 'todo__button', 'todo__button--delete');
+                $deleteButton.textContent = 'Delete';
+                $deleteButton.addEventListener('click', handleTodoDeleteClick);
+        
+                const $buttonsWrapper = document.createElement('div');
+                $buttonsWrapper.classList.add('todo__buttons-wrapper');
+                $buttonsWrapper.append($editButton);
+                $buttonsWrapper.append($deleteButton);
+        
+                $item.appendChild($todoTitle);
+                $item.appendChild($buttonsWrapper);
+        
+                return $item;
+              }
+        
+              const handleFormSubmit = event => {
+                event.preventDefault();
+        
+                const task = $newTodoInput.value.trim();
+        
+                if (!task.length) return;
+        
+                const $todo = createTodo(task);
+                $todos.appendChild($todo);
+        
+                $newTodoInput.value = '';
+              };
+        
+              $addTodoForm.addEventListener('submit', handleFormSubmit);
+            })();
+          </script>
+        
+        <button id="scrollToTopButton" onclick="scrollToTop()">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+        <script>
+            // Function to scroll to the top of the page
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Add smooth scrolling behavior
+                });
+            }
+    
+            // Show the scroll-to-top button when the user scrolls down
+            window.onscroll = function () {
+                scrollFunction();
+            };
+    
+            function scrollFunction() {
+                var scrollToTopButton = document.getElementById("scrollToTopButton");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            }
+        </script>  
+        
+         <script>
+            //button click
+            const button = document.querySelector(".button");
+            button.addEventListener("click", (e) => {
+              e.preventDefault;
+              button.classList.add("animate");
+              setTimeout(() => {
+                button.classList.remove("animate");
+              }, 600);
+            });
+          </script> 
+
+       
+  <script>
+    // Function to show a confirmation dialog
+    function confirmNavigation() {
+        const confirmation = window.confirm("You are about to navigate out of our site, there are no nav bars, to return to the site, you would have to go back via browser. Are you sure you want to continue?");
+        
+        if (confirmation) {
+            // If the user confirms, navigate to the desired URL
+            window.location.href = "payment.html"; 
+        }
+    }
+  </script>
+
+  <script>
+    // Function to remove the "animate" class after the animation duration
+    function removeAnimationClass() {
+      const button = document.querySelector(".button");
+      button.classList.remove("animate");
+    }
+  
+    // Button click event listener
+    const button = document.querySelector(".button");
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      button.classList.add("animate");
+      setTimeout(removeAnimationClass, 5000); // Adjust the duration as needed (600ms in this example)
+    });
+  </script>
+
+  <script>
+    // Sample data for illustration purposes
+    const courseLabels = ['Chemistry', 'Biology', 'Physics', 'ICT'];
+    const performanceData = [60, 90, 75, 85];
+  
+    // Get the canvas element and create a chart
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: courseLabels,
+        datasets: [{
+          label: 'Course performance',
+          data: performanceData,
+          backgroundColor: 'rgba(152, 53, 255, 0.5)', // Adjust color as needed
+          borderColor: 'rgba(152, 53, 255, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100 // Adjust the maximum value of the y-axis as needed
+          }
+        }
+      }
+    });
+  </script>
+
+ 
+  
+
+</body>
+</html>

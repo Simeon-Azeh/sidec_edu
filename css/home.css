@@ -1,0 +1,1004 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+body {
+    background: #f9feff;
+    display: inline-block;
+}
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  
+}
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 0 10px;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-top: 5px;
+    
+    
+}
+a {
+    position: relative;
+    color: rgba(85, 83, 83);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+.fas {
+    position: relative;
+    width: 60px;
+    height: 35px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+a:hover {
+    background: #f0ffff;
+}
+nav:hover {
+    width: 250px;
+    transition: all 0.5s ease;
+}
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+/** Tutor container**/
+nav li a.active,
+nav li i.active {
+  color: #9835FF;
+}
+
+
+.tutor-container {
+flex: 1;
+padding: 20px;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+position: relative; 
+background-color: #fff;
+box-sizing: border-box;
+border: 1px solid #9835FF;
+border-radius: 5px;
+max-width: 550px;
+height: 690px;
+margin-left: 100px;
+margin-top: 10px;
+
+}
+
+.tutor-container h3 {
+    font-weight: 700;
+}
+.tutor-container h2 {
+    font-weight: 700;
+    color: #9835FF;
+    margin-bottom: 10px;
+}
+.tutor-content {
+    border: 1px solid #9835FF;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #9835FF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tutor-content h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    text-shadow:  5px 5px 10px rgba(49, 47, 47, 0.2);
+    margin-left: 16px;
+    margin-top: 5px;
+
+}
+.tutor-content p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #fff;
+}
+.tutor-content:hover {
+    box-shadow: 5px 5px 10px rgba(49, 47, 47, 0.2) ;
+}
+#lon {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.recent-results-1 {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f7f0f0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.recent-results-1 h5 {
+    color: #696969;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 15px;   
+}
+.recent-results-1 h1 {
+    font-size: 41px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 5px;   
+    color: #9835FF;
+    
+}
+.recent-results-1 p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #333;
+}
+#subs {
+    color: #9835FF;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -10px;  
+    display: flex;
+    justify-content: right;
+}
+.test-2 p {
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.test-2 a {
+background: none;
+}
+/* styles for to-do list*/
+:root {
+--dark-grey: #1c1c1c;
+--primary: #9835FF;
+--danger: #ff0055;
+}
+
+
+.container-7 {
+padding: 2rem;
+box-sizing: border-box;
+border-radius: 10px;
+border: 1px solid #9835FF;
+box-shadow: 0 0 10px 0 #00000020;
+max-width: 500px;
+margin: 10px auto;
+background-color: white;
+animation: slideInTop .3s ease;
+}
+
+.heading {
+margin: 0 0 2rem;
+}
+
+.input {
+font-size: 1rem;
+color: var(--dark-grey);
+font-family: var(--ff-lexend-exa);
+padding: 10px;
+border-radius: 4px;
+border: 1px solid #00000020;
+margin-right: 10px;
+width: 100%;
+}
+.button {
+font-size: 1rem;
+color: var(--dark-grey);
+font-family: var(--ff-lexend-exa);
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 4px;
+color: white;
+background-color: var(--primary);
+border: 0;
+}
+.form-group {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.todos {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.todo {
+margin-top: 1rem;
+animation: slideInLeft .3s ease;
+transition: transform .3s ease, opacity .3s ease;
+}
+.todo--delete {
+opacity: 0;
+transform: translate3d(-100px, 0, 0);
+}
+.todo__title {
+display: block;
+margin-bottom: 10px;
+cursor: pointer;
+}
+.todo__title--done {
+text-decoration: line-through;
+color: grey;
+}
+.todo__buttons-wrapper {
+display: flex;
+}
+.todo__button--edit {
+margin-right: 10px;
+}
+.todo__button--delete {
+background-color: var(--danger);
+}
+
+@media screen and (min-width: 500px) {
+.container {
+padding: 2rem;
+}
+.todo {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.todo__title {
+margin-bottom: 0;
+}
+
+}
+
+@keyframes slideInTop {
+from { opacity: 0; transform: translate3d(0, -100px, 0); }
+to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes slideInLeft {
+from { opacity: 0; transform: translate3d(-100px, 0, 0); }
+to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+/* Add this CSS to style the input on focus */
+/* Add this CSS to style the input on focus with a smooth transition */
+input[type="text"] {
+transition:  0.5s ease; /* Add a transition effect for the outline property */
+}
+
+input[type="text"]:hover {
+outline: 1px solid purple; /* Change the outline color and width on focus */
+transition: hover 0.3s ease;
+}
+input[type="text"]:focus {
+outline: 1px solid purple; /* Change the outline color and width on focus */
+}
+/* Style for the scroll-to-top button */
+#scrollToTopButton {
+display: none; /* Initially hide the button */
+position: fixed;
+bottom: 20px;
+right: 30px; /* Adjust the right position */
+background-color: #9835FF; /* Button background color */
+color: #fff; /* Text color */
+border: none;
+border-radius: 10px; /* Make it a circle */
+cursor: pointer;
+padding: 10px;
+z-index: 99; /* Ensure it's above other content */
+transition: 0.5s ease ;
+font-weight: 600;
+}
+
+#scrollToTopButton i {
+font-size: 20px;
+font-weight: 600;
+}
+
+#scrollToTopButton:hover {
+background-color: #333; /* Hover color */
+}
+.close-button {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+font-size: 20px;
+cursor: pointer;
+color: #333;
+}
+.close-button:hover {
+color: #9835FF;
+}
+.notification-panel {
+position: fixed;
+justify-content: right;
+bottom: 20px; /* Move it to the bottom */
+right: 10px;
+left: 20px;
+width: 30%; /* Reduce the width */
+height: 16%;
+padding: 16px; /* Adjust padding */
+background-color: #fff;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+}
+
+.notification-panel h2 {
+font-size: 14px;
+text-align: center;
+
+}
+.notification-panel p {
+font-size: 13px;
+}
+/* Mobile Styles */
+@media (max-width: 799px) {
+
+
+}
+@media (max-width: 768px) {
+    /* ... Existing mobile styles ... */
+.nav-item {
+    margin-right: 50px ;
+}
+    /* Adjustments for smaller screens */
+    .sections-container {
+        flex-direction: column-reverse; /* Reverse order for smaller screens */
+        margin: 10px auto;
+    }
+    .tutor-container {
+     margin: 15px auto;
+     margin-left: 100px;
+     justify-content: center;
+     align-items: center;
+     width: 65%;
+    }
+.tutor-container .take-test-link {
+        box-sizing: border-box;
+        margin: 10px auto;
+        width: 100%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .notification-panel {
+        width: 75%; /* Adjust width */
+        height: 15%;
+        top: auto;
+        bottom: 20px; /* Move it a bit to the bottom */
+        right: 10px;
+        left: 10px;
+    }
+
+    .notification-panel h2 {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+    .notification-panel p {
+        font-size: 10px;
+    }
+    .pro-button  {
+        width: 30%;
+        font-size: 10px;
+        padding: 5px 5px;
+        margin-bottom: 40px;
+    }
+    .logout {
+        margin-top: 0;
+    }
+}
+.learn-more-link {
+color: purple;
+margin-top: -15px;
+display: inline-block;
+font-size: 12px;
+}
+.learn-more-link:hover {
+background-color: none;
+}
+.pro-button {
+background-color: #9835FF; /* Purple background color */
+width: 70%;
+height: 20px;
+font-size: 12px;
+margin-top: 2px;
+margin-bottom: 20px;
+margin-left: 15px;
+color: #fff; /* Text color */
+padding: 10px 10px; /* Adjust padding to your preference */
+border-radius: 10px;
+text-decoration: none; /* Remove underlines from the link */
+font-weight: 600;
+transition: all 0.40s ease;
+}
+
+.pro-button:hover {
+background-color: #696969; /* Change color on hover */
+}
+/* Add this CSS to adjust the "Pro" button position on smaller screens */
+@media (max-width: 768px) {
+.nav-item {
+margin-right: 50px;
+}
+
+.pro-button {
+width: 60%;
+margin-top: -3px; /* Adjust the top margin to your preference */
+margin-left: 15px;
+}
+}
+.button {
+position: relative;
+padding: 10px 22px;
+border-radius: 6px;
+margin-right: 30px;
+margin-top: 2px;
+margin-bottom: 5px;
+justify-content: center;
+align-items: center;
+border: none;
+color: #fff;
+cursor: pointer;
+background-color: #7d2ae8;
+transition: all 0.2s ease;
+}
+.button:active {
+transform: scale(0.96);
+}
+.button:before,
+.button:after {
+position: absolute;
+content: "";
+width: 150%;
+left: 50%;
+height: 100%;
+transform: translateX(-50%);
+z-index: -1000;
+background-repeat: no-repeat;
+}
+.button.animate::before {
+top: -70%;
+background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+10% 10%, 18% 18%;
+animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+0% {
+background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+40% 90%, 55% 90%, 70% 90%;
+}
+50% {
+background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+50% 50%, 65% 20%, 90% 30%;
+}
+100% {
+background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+50% 40%, 65% 10%, 90% 20%;
+background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+.button.animate::after {
+bottom: -70%;
+background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greenbottomBubbles {
+0% {
+background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+70% -10%, 70% 0%;
+}
+50% {
+background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+105% 0%;
+}
+100% {
+background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+110% 10%;
+background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.profiledis {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end; /* Align to the right on larger screens */
+gap: 0.1rem;
+align-items: center;
+top: 0;
+margin-top: -680px;/* You can adjust this if needed */
+margin-right: 70px; /* Set margin-right to move it to the top right */
+cursor: pointer;
+border-radius: 10px;
+}
+
+.row {
+position: relative;
+width: 40%;
+height: 1000px;
+background: #fff;
+padding: 0px 0px 10px 0px;
+border-radius: 10px;
+box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+transition: all .40s ease;
+margin-left: 110px;
+margin-bottom: 1rem;  
+display: flex;
+flex-direction: column;
+}
+
+.profile-picture {
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+margin-top: 20px ;
+
+
+
+}
+
+.profile-picture img {
+width: 30%;
+height: auto;
+border-radius: 50%;
+border: 3px solid #9835ff;
+}
+.row h2 {
+text-align: center;
+font-size: 24px;
+color: #9835ff;
+}
+
+.row p {
+color: #888;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+.row:hover {
+transform: translateY(-15px);
+}
+.row h2:hover {
+translate: translateY(-15px);
+}
+
+.content {
+padding: 10px;
+}
+
+.course-text {
+padding: 35px 20px;
+}
+.course-text h5 {
+color: #9835ff;
+font-size: 18px;
+}
+.course-text h3 {
+font-size: 24px;
+font-weight: 600;
+line-height: 34px;
+margin: 15px 0 15px;
+transition: all 0.40s ease;
+}
+.course-text h3:hover {
+color: #9835ff;
+}
+.course-text h6 {
+color: #696969;
+line-height: 30px;
+opacity: 0.6;
+letter-spacing: 1px;
+margin-bottom: 10px;
+}
+hr {
+color: #999; /* Line color */
+width: 60%;
+background-color: #999; /* Line color for old browsers */
+height: 1px; /* Line thickness */
+margin-top: 8px;
+margin-bottom: 10px;
+margin-left: 100px;
+}
+.other-content {
+box-sizing: border-box;
+}
+.other-content h5 {
+margin-left: 20px;
+font-size: 18px;
+color: #696969;
+
+}
+.other-content i {
+display: inline-block;
+font-size: 50px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 30px;
+} 
+
+
+.other-content h5 {
+margin-left: 20px;
+font-size: 14px;
+font-weight: 600;
+color: #696969;
+margin-top: 20px;
+margin-bottom: 15px;
+}
+
+.other-content h6 {
+display: flex;
+text-align: right;
+right: 0;
+font-size: 10px;
+margin-left: 20px;
+color: #7d2ae8;
+margin-bottom: 10px;
+}
+
+
+.other-content span {
+font-size: 16px;
+font-weight: 600;
+margin-right: 10px;
+}
+
+.button {
+background-color: #9835FF;
+color: white;
+padding: 15px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+margin-top: 20px;
+transition: all 0.40s ease;
+}
+
+.button:hover {
+transform: translateY(-5px);
+}
+.buttons {
+padding-right: 5px;
+}
+
+.log0 {
+display: block;
+background-color: transparent;
+cursor: pointer;
+text-align: center;
+border: 1px solid #9835ff;
+color: #9835FF;
+margin-top: 15px;
+margin-left: -20px;
+margin-right: -40px;
+font-weight: 600;
+padding: 10px 20px;
+border-radius: 10px;
+transition: all 0.40s ease;
+}
+.log0:hover {
+background: none;
+transform: translateY(-5px);
+}
+.log0 i {
+font-size: 20px;
+margin-right: 5px;
+}
+
+.buttons {
+font-size: 14px;
+}
+/* ... (previous CSS styles) */
+
+.buttons-container {
+position: absolute;
+bottom: 0;
+left: 0;
+gap: 1;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.button, .log0 {
+margin-top: 20px;
+margin-left: 20px;
+bottom: 0;
+
+}
+/* Adjust the size of the Upgrade button */
+.upgrade-button {
+font-size: 10px; /* You can adjust the font size */
+padding: 10px 20px; /* Adjust the padding as needed */
+margin-right: 40px;
+}
+
+/* Move the Upgrade button to the right */
+.membership-container {
+display: flex;
+align-items: center;
+}
+
+.upgrade-button {
+margin-left: auto;
+cursor: pointer;
+background-color: transparent;
+border: 1px solid #9835FF;
+font-size: 12px;
+font-weight: 600;
+color: #9835FF;
+border-radius: 10px;
+}
+.membership-container h5 {
+font-size: 14px;
+color: #696969;
+margin-top: -20px;
+margin-left: 20px;
+margin-bottom: 10px;
+}
+.membership-container p {
+font-size: 14px;
+font-weight: 600;
+margin-left: -50px;
+margin-top: 15px;
+color: #9835ff;
+}
+
+.other-content .fa-html5 {
+color: rgb(7, 61, 177);
+}
+.other-content .fa-css3-alt {
+color: rgb(255, 60, 0);
+} 
+.skill {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.progress-container {
+width: 100%; /* Adjust the width of the progress container */
+margin-left: -40px; /* Add some margin for spacing */
+margin-top: 30px;
+margin-right: 40px;
+}
+
+.progress-bar-container {
+width: 100%;
+height: 10px; 
+background-color: #ddd; /* Change the color of the progress bar container */
+border-radius: 5px; /* Add rounded corners to the progress bar container */
+overflow: hidden; /* Hide the overflowing part of the progress bar */
+}
+
+.progress-bar {
+height: 100%; 
+width: 50%; 
+background-color: #9835ff;
+box-shadow: inset;
+transition: width 0.3s ease; 
+border-radius: 3px; 
+}
+.skill span {
+margin-top: -10px;
+margin-left: 20px;
+font-weight: 600;
+font-size: 16px;
+color: #696969;
+}
+#performanceChart {
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 40px;
+font-size: 16px;
+font-weight: 600;
+}
+.skill .fa-python {
+color: yellowgreen;
+}
+
+@media (max-width: 768px) {
+/* Set the order for smaller screens */
+.container-main {
+display: flex;
+flex-direction: column;
+
+}
+
+/* Set spacing at the top between tutor and row */
+.profiledis {
+margin-top: 20px; /* Adjust the spacing as needed */
+margin-right: 80px;
+}
+.row {
+width: 70%;
+height: 800px;
+}
+.row h2 {
+text-align: center;
+font-size: 18px;
+color: #9835ff;
+}
+
+.row p {
+font-size: 14px;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+hr {
+margin-top: -5px;
+margin-left: 55px;
+}
+.pro-button {
+display: none;
+}
+.upgrade-button {
+font-size: 10px;
+font-weight: 600;
+padding: 10px 20px;
+}
+.other-content h5 {
+font-size: 18px;
+}
+.membership-container h5 {
+font-size: 12px;
+}
+.membership-container p {
+font-size: 12px;
+}
+.button {
+padding: 8px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+font-size: 12px;
+margin-top: 10px;
+transition: all 0.40s ease;
+}
+
+.button:hover {
+transform: translateY(-5px);
+}
+.buttons {
+padding-right: 5px;
+}
+
+.log0 {
+display: block;
+background-color: transparent;
+cursor: pointer;
+text-align: center;
+border: 1px solid #9835ff;
+color: #9835FF;
+margin-top: 15px;
+margin-left: -20px;
+margin-right: -60px;
+margin-bottom: 10px;
+font-weight: 600;
+padding: 8px 10px;
+border-radius: 10px;
+transition: all 0.40s ease;
+}
+.log0:hover {
+background: none;
+transform: translateY(-5px);
+}
+.log0 i {
+font-size: 15px;
+margin-right: 5px;
+}
+
+.buttons {
+font-size: 14px;
+}
+/* ... (previous CSS styles) */
+
+.buttons-container {
+position: absolute;
+bottom: 0;
+left: 0;
+gap: 1;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.button, .log0 {
+margin-top: 20px;
+margin-left: 20px;
+bottom: 0;
+}
+
+}
+.todo__button--delete {
+background-color: var(--danger);
+}
+
